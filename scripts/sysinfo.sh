@@ -15,7 +15,7 @@ OUTPUT_FILE="sysinfo.log"
   free -h
   echo
   echo "==== Disks ===="
-  df -hT --exclude-type=tmpfs --exclude-type=devtmpfs
+  df -hT --exclude-type=tmpfs --exclude-type=devtmpfs #df -hT -x tmpfs -x devtmpfs
 } > "$OUTPUT_FILE"
 
 echo "Report saved to $OUTPUT_FILE"
