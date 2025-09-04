@@ -1,0 +1,8 @@
+# Ignore system info logs
+sysinfo.log
+
+# Editor/OS files
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
